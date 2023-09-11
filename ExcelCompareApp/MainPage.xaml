@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExcelCompareApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+         
+
+        <Label
+            Text="Excel Compare App"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Welcome to the .NET Multi-platform App UI for comparing Excel files."
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+            FontSize="18"
+            HorizontalOptions="Center" />
+           
+
+            <Button
+            x:Name="PickFile1"
+            Text="Select Excel File 1"
+            SemanticProperties.Hint="Select the file to compare"
+            Clicked="PickExcel_Clicked1"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="PickFile2"
+            Text="Select Excel File 2"
+            SemanticProperties.Hint="Select the file to compare"
+            Clicked="PickExcel_Clicked2"
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="CompareFilesButton"
+            Text="Compare Files"
+            Clicked="CompareExcelFiles"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="ComparisonResultLabel"
+            Text=""
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+</ContentPage>
